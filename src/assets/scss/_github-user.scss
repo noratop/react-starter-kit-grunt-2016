@@ -1,0 +1,16 @@
+.github-user {
+  margin-bottom: 0.5em;
+
+  &__pic {
+    display: inline-block;
+    width: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1em;
+  }
+  &__username {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}

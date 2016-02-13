@@ -1,0 +1,12 @@
+@import 'foundation_settings';
+@import 'foundation';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@import 'github-user';

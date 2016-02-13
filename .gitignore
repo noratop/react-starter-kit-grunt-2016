@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.sass-cache
+*.css*
+/src/assets/css
+/src/assets/js/*app-bundle*
+/dist
