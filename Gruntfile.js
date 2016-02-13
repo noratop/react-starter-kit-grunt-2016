@@ -64,6 +64,7 @@ module.exports = function(grunt) {
           ext: '.css'
         }],
         options: {
+          loadPath: ['node_modules/foundation-sites/scss'],
           style: 'compressed'
         }
       },
@@ -77,6 +78,7 @@ module.exports = function(grunt) {
 
         }],
         options: {
+          loadPath: ['node_modules/foundation-sites/scss'],
           style: 'nested',
           quiet: true,
           lineNumbers: true
