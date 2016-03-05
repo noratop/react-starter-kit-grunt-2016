@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
 
-var Home = React.createClass({
+class Home extends Component {
   render() {
     return (
       <div>
@@ -12,6 +12,6 @@ var Home = React.createClass({
       </div>
     )
   }
-});
+}
 
 export default Home;

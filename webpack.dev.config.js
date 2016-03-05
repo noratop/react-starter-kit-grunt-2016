@@ -4,7 +4,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:42000',
     'webpack/hot/only-dev-server',
-    './src/assets/js/main'
+    './src/assets/js/routes'
   ],
   output: {
     path: './src/assets/js',
