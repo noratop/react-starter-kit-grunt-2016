@@ -1,5 +1,5 @@
   import React, { Component, PropTypes } from 'react';
-  import GithubUser from '../components/GithubUser';
+  import FollowersListView from '../components/FollowersListView';
   import {connect} from 'react-redux';
   import {fetchFollowers} from '../redux/actions';
 
@@ -12,10 +12,6 @@
 
      componentDidMount() {
          this.props.dispatch(fetchFollowers());
-       // this.setState({
-       //   loading: true
-       // });
-       //
     }
 
      // componentWillReceiveProps(nextProps) {
@@ -44,14 +40,8 @@
         return 'no followers...';
       }
       else {
-        return (<ul>{this.props.followers.result.map(this.renderFollower)}</ul>);
+        return <FollowersListView list={followers.result}/>;
       }
-    }
-
-    renderFollower(follower) {
-      return (
-        <GithubUser key={follower.id} avatar_url={follower.avatar_url} username={follower.login} />
-      )
     }
   }
 

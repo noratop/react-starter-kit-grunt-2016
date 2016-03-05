@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import Repo from '../components/Repo';
+import ReposListView from '../components/ReposListView';
 import {connect} from 'react-redux';
 import {fetchRepos} from '../redux/actions';
 
@@ -11,10 +11,6 @@ class Repos extends Component {
 
   componentDidMount() {
       this.props.dispatch(fetchRepos());
-    // this.setState({
-    //   loading: true
-    // });
-    //
   }
 
   // componentWillReceiveProps(nextProps) {
@@ -43,9 +39,7 @@ class Repos extends Component {
       return 'no repos...';
     }
     else {
-      return (
-            <ul>{repos.result? repos.result.map((repo)=><Repo key={repo.id} repo={repo}/>) : ''}</ul>
-      );
+      return <ReposListView list={repos.result}/>;
     }
   }
 }
